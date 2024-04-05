@@ -37,7 +37,7 @@ body {
   padding-left: 15px;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: #fafafa;
+  background: transparent;
   color: #87b344;
 }
 .marca img {
@@ -48,16 +48,12 @@ body {
   top: 10px;
 }
 nav {
-  position: relative;
   padding: 10px;
   background-color: #fafafa;
   height: 80%;
   width: 120px;
   overflow: hidden;
   transition: 1s;
-  top: 0;
-  bottom: 0;
-  left: 4;
 }
 
 nav:hover {
@@ -66,14 +62,9 @@ nav:hover {
   height: 85vh;
   overflow: hidden;
   transition: 1s;
-  top: 0;
-  bottom: 0;
-  left: 4;
   font-size: small;
   width: 280px;
   transition: 1s;
-  /* height: 89vh; */
-  /* padding: 10px; */
 }
 
 li:hover {
@@ -83,12 +74,10 @@ li:hover {
   left: 2px;
 }
 
-.material-symbols-outlined:hover {
-  color: #0b5202;
-}
-
 nav ul li {
   position: relative;
+  display: flex;
+  align-items: center;
   font-size: small;
   padding: 15px;
   left: 30px;
@@ -104,18 +93,19 @@ nav ul {
   list-style-type: none;
   position: relative;
   left: 50px;
+  width: 150px;
 }
 
 .lista3 {
   background-color: #fafafa;
   position: relative;
-  top: 150px;
+  top: 270px;
 }
 
 .lista2 {
   background-color: #fafafa;
   position: relative;
-  top: 90px;
+  top: 140px;
 }
 
 /* ---------------------- */
@@ -138,7 +128,9 @@ nav ul {
   border-radius: 70%;
   position: relative;
   top: 9px;
+  left: 10px;
 }
+
 #barra-pesquisa .input {
   display: flex;
   height: 25px;
@@ -167,25 +159,18 @@ nav ul {
   background-color: white;
 }
 
-.perfil {
+#perfil {
+  background: transparent;
   position: relative;
   display: flex;
   right: 30px;
 }
 
-#perfil {
-  background-color: white;
-}
-
-.perfil h3 {
-  background-color: white;
-}
-
-.perfil .material-symbols-outlined {
+#perfil .material-symbols-outlined {
+  color: #436e01;
   position: relative;
-  display: flex;
-  top: 22px;
-  color: #87b344;
+  top: 45px;
+  right: 50px;
 }
 
 /* ---------------------------- */
@@ -199,12 +184,6 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-#main .texto1 {
-  display: flex;
-  position: relative;
-  right: 15px;
 }
 
 .texto1 {
@@ -232,21 +211,13 @@ nav ul {
   cursor: pointer;
 }
 
-.texto1 img {
-  position: relative;
-  top: 50px;
-  left: 100px;
-  height: 70px;
-  width: 100px;
-  display: flex;
-}
-
 .meio-texto {
   display: flex;
   color: gray;
   position: relative;
   left: 15px;
 }
+
 .meio-texto p {
   display: flex;
   position: relative;
@@ -268,9 +239,6 @@ nav ul {
   height: 10vh;
   width: 100%;
   flex-direction: column;
-}
-.conteudo {
-  background-color: #fafafa;
 }
 
 #conteudo .card-cofre {
@@ -325,6 +293,7 @@ nav ul {
   position: relative;
   bottom: 35px;
 }
+
 #conteudo .card-shopping h3 {
   position: relative;
   bottom: 75px;
@@ -357,7 +326,7 @@ button:hover {
 
 /* ---------------------------------- */
 
-/* lateral direita, onde estará o extrato */
+/* lateral direita, onde estará o histórico */
 
 #lateral-direita {
   grid-area: lateral-direita;
@@ -372,10 +341,12 @@ button:hover {
 
 #lateral-direita .compra1:hover {
   color: #436e01;
+  cursor: pointer;
 }
 
 #lateral-direita .compra2:hover {
   color: #436e01;
+  cursor: pointer;
 }
 
 #lateral-direita .lateral-titulo h3 {
@@ -406,14 +377,6 @@ button:hover {
   left: 276px;
   bottom: 40px;
   cursor: pointer;
-}
-
-#lateral-direita .card-compras #din {
-  color: #87b344;
-  position: relative;
-  top: 80px;
-  left: 10px;
-  width: 100px;
 }
 
 #lateral-direita .card-compras h3 {
